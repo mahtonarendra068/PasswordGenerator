@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui,'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: linear-gradient(to right bottom , #ffa585, #45c5d8 );
+    color: white;
+}
+
+.container{
+
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    padding:28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 8px 8px 4px #909090 , 8px 8px 0px #575757 ;
+    font-weight: 600;
+
+}
+
+.inputBox{
+    position: relative;
+}
+
+.container h2{
+    /* font-size: 1.2rem; */
+    margin-block: 7px;
+}
+
+.passBox{
+    background-color: #fff;
+    border:none;
+    border-radius: 7px;
+    outline: none;
+    padding: 5px;
+    width: 250px;
+    font-size: 20px;
+    color: rgb(88, 83, 83);
+    margin-block: 9px;
+    text-overflow: ellipsis;
+}
+.row{
+    display: flex;
+    margin-block: 8px;
+}
+.row p, .row label{
+    flex-basis: 100%;
+    cursor: pointer;
+}
+.row input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.GenerateBtn{
+    padding-block: 10px;
+    margin-top: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.GenerateBtn:hover{
+    background-color: rgb(43, 43, 195);
+}
+.container #copy{
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    color: #909090;
+    cursor: pointer;
+}
+#done{
+    position: absolute;
+    right: 126px;
+    top: 215px;
+    color: #909090;
+    cursor: pointer;
+    display: none;
+}
